@@ -48,3 +48,4 @@
 .wasm filter=lfs diff=lfs merge=lfs -text
 *E:/WebGithub/Build/Build.wasm filter=lfs diff=lfs merge=lfs -text
 *E:/WebGithub/Build/Build.data filter=lfs diff=lfs merge=lfs -text
+*.data filter=lfs diff=lfs merge=lfs -text
