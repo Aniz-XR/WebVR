@@ -31,9 +31,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build.data",
-        frameworkUrl: buildUrl + "/Build.framework.js",
-        codeUrl: buildUrl + "/Build.wasm",
+        dataUrl: buildUrl + "/Build.data.unityweb",
+        frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
+        codeUrl: buildUrl + "/Build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Webxr",
@@ -49,8 +49,8 @@
       var unityInstance = null;
       
 
-      canvasContainer.style.width = "1920px";
-      canvasContainer.style.height = "820px";
+      canvasContainer.style.width = "960px";
+      canvasContainer.style.height = "600px";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
