@@ -4,19 +4,20 @@
     <title>Open App</title>
     <script type="text/javascript">
         function openApp() {
-            var appLink = 'arnavigation://seatbook';
-            var iframe = document.createElement('iframe');
-            iframe.style.display = 'none';
-            iframe.src = appLink;
-            document.body.appendChild(iframe);
+            var appLink = 'arnavigation://seatbook';  // Deep link to the app
+            var playStoreLink = 'https://play.google.com/store/apps/details?id=com.example.app';  // Replace with your app's Play Store link
+            
+            // Try opening the app
+            window.location.href = appLink;
+            
+            // If app doesn't open, redirect to Play Store after 3 seconds
             setTimeout(function() {
-                window.location = playStoreLink;
-            }, 5000); // 2 seconds delay
+                window.location.href = playStoreLink;
+            }, 3000);  // 3-second delay
         }
     </script>
 </head>
 <body>
-<button onclick="openApp()">OPENAPP</button>
+    <button onclick="openApp()">OPEN APP</button>
 </body>
 </html>
-
