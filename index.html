@@ -1,23 +1,10 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Open App</title>
-    <script type="text/javascript">
-        function openApp() {
-            var appLink = 'dynamic://seat';  // Deep link to the app
-            var playStoreLink = 'https://play.google.com/store/apps/details?id=com.Alan3.MathleteShowdown';  // Replace with your app's Play Store link
-            
-            // Try opening the app
-            window.location.href = appLink;
-            
-            // If app doesn't open, redirect to Play Store after 3 seconds
-            setTimeout(function() {
-                window.location.href = playStoreLink;
-            }, 3000);  // 3-second delay
-        }
-    </script>
-</head>
-<body>
-    <button onclick="openApp()">OPEN APP</button>
-</body>
+    <head>
+       <meta charset="utf-8">
+    </head>
+    <body >
+       <h1>My Deep Link Test page</h1>
+       <p><a href="unitydl://mylink">Launch</a></p>
+       <p><a href="unitydl://mylink?parameter">Launch with Parameter</a></p>
+    </body>
 </html>
