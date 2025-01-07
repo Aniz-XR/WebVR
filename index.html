@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Open App</title>
-
-<script type="text/javascript">
-
-function openApp() {
-
-var appLink = "arnavigation://seatbook?scene=Main":
-
-var playStoreLink ="https://play.google.com/store/apps/details?id=co Mathlete Showdown";
-
-var iframe = document.createElement("iframe");
-
-iframe.style.display = "none";
-
-iframe.src = applink:
-
-document.body.appendChild(iframe);--
-
-setTimeout(function () {
-
-window.location = playStoreLink
-
-1. 2000): // 2 seconds delay
-
-/script
-
+    <title>Open App</title>
+    <script type="text/javascript">
+        function openApp() {
+            var appLink = 'arnavigation://seatbook?scene=Main';
+            var playStoreLink = 'https://play.google.com/store/apps/details?id=com.Alan3.MathleteShowdown';
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = appLink;
+            document.body.appendChild(iframe);
+            setTimeout(function() {
+                window.location = playStoreLink;
+            }, 2000); // 2 seconds delay
+        }
+    </script>
 </head>
-
 <body>
-
 <button onclick="openApp()">OPENAPP</button>
-
 </body>
-
 </html>
 
