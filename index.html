@@ -4,7 +4,7 @@
     <title>Open App</title>
     <script type="text/javascript">
         function openApp() {
-            var appLink = 'native://mylink';
+            var appLink = 'unitydl://mylink';
             var iframe = document.createElement('iframe');
             iframe.style.display = 'none';
             iframe.src = appLink;
@@ -18,7 +18,7 @@
 <body>
 <button onclick="openApp()">OPENAPP</button>
         <h1>My Deep Link Test page</h1>
-       <p><a href="native://mylink">Launch</a></p>
-       <p><a href="native://mylink?scene=DynamicOpen">Launch with Parameter</a></p>
+       <p><a href="unitydl://mylink">Launch</a></p>
+       <p><a href="unitydl://mylink?scene=DynamicOpen">Launch with Parameter</a></p>
 </body>
 </html>
